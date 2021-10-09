@@ -1,4 +1,9 @@
 package io.github.seebaware.springbootrestapimongodb;
 
-public interface StudentRepository {
+import org.springframework.data.mongodb.repository.MongoRepository;
+
+public interface StudentRepository extends MongoRepository<String, Student> {
+
+    
+
 }

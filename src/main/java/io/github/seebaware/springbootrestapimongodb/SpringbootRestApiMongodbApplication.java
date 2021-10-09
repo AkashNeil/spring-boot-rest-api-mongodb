@@ -46,7 +46,8 @@ public class SpringbootRestApiMongodbApplication {
 
             // usingMongoTemplateAndQuery(studentRepository, mongoTemplate, email, student);
 
-            studentRepository
+           /*
+           studentRepository
                     .findStudentByEmail(email).ifPresentOrElse(
                     s -> {
                         log.warning(student + " already exists.");
@@ -55,6 +56,7 @@ public class SpringbootRestApiMongodbApplication {
                         studentRepository.insert(student);
                     }
             );
+            */
 
         };
     }

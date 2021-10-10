@@ -1,11 +1,12 @@
 # Spring Boot REST API (MongoDB)
 
 Technologies used :
+- Spring Boot 2.5.5
+- Java 17
 - Docker
-  - Mongo Express
-  - 
+- MongoDB & Mongo Express
 
-
+---
 Sample JSON to POST data :
 
 ```json
@@ -58,7 +59,7 @@ networks:
   default:
     name: mongodb_network
 ```
-
+---
 Future improvements :
 - use records
 - implement POST, PUT, etc

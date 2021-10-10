@@ -1,10 +1,11 @@
-package io.github.seebaware.springbootrestapimongodb;
+package io.github.seebaware.springbootrestapimongodb.employee;
 
+import io.github.seebaware.springbootrestapimongodb.Address;
+import io.github.seebaware.springbootrestapimongodb.Gender;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 import org.springframework.data.annotation.Id;
-import org.springframework.data.mongodb.core.index.Indexed;
 import org.springframework.data.mongodb.core.mapping.Document;
 
 import java.math.BigDecimal;
@@ -15,7 +16,7 @@ import java.util.List;
 @NoArgsConstructor
 @AllArgsConstructor
 @Data
-public class Student {
+public class Employee {
 
     @Id
     private String id;
@@ -28,7 +29,7 @@ public class Student {
     private BigDecimal totalSpentInBooks;
     private LocalDateTime created;
 
-    public Student(String firstName, String lastName, String email, Gender gender, Address address, List<String> favouriteSubjects, BigDecimal totalSpentInBooks, LocalDateTime created) {
+    public Employee(String firstName, String lastName, String email, Gender gender, Address address, List<String> favouriteSubjects, BigDecimal totalSpentInBooks, LocalDateTime created) {
         this.firstName = firstName;
         this.lastName = lastName;
         this.email = email;

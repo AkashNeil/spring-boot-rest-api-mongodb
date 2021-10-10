@@ -3,6 +3,7 @@ package io.github.seebaware.springbootrestapimongodb;
 import lombok.AllArgsConstructor;
 import org.springframework.stereotype.Service;
 
+import java.util.ArrayList;
 import java.util.List;
 
 @AllArgsConstructor
@@ -11,9 +12,12 @@ public class StudentService {
 
     private final StudentRepository studentRepository;
 
-
     public List<Student> getAllStudents() {
         return studentRepository.findAll();
+    }
+
+    public Student createStudent(Student student) {
+        return studentRepository.insert(student);
     }
 
 

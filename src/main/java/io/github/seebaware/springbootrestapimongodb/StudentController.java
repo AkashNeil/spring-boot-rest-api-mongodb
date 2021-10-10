@@ -2,9 +2,8 @@ package io.github.seebaware.springbootrestapimongodb;
 
 
 import lombok.AllArgsConstructor;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.http.MediaType;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
@@ -20,6 +19,9 @@ public class StudentController {
         return studentService.getAllStudents();
     }
 
-
+    @PostMapping(path="/create", consumes = MediaType.APPLICATION_JSON_VALUE, produces = MediaType.APPLICATION_JSON_VALUE)
+    public Student createStudent(@RequestBody Student student) {
+        return studentService.createStudent(student);
+    }
 
 }

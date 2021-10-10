@@ -1,5 +1,5 @@
 package io.github.seebaware.springbootrestapimongodb;
 
-public enum Gender {
-    MALE, FEMALE
+public enum LeaveType {
+    ANNUAL, SICK
 }

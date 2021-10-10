@@ -1,7 +1,6 @@
 package io.github.seebaware.springbootrestapimongodb.employee;
 
 import io.github.seebaware.springbootrestapimongodb.Address;
-import io.github.seebaware.springbootrestapimongodb.Gender;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -23,13 +22,13 @@ public class Employee {
     private String firstName;
     private String lastName;
     private String email;
-    private Gender gender;
+    private String gender;
     private Address address;
     private List<String> favouriteSubjects;
     private BigDecimal totalSpentInBooks;
     private LocalDateTime created;
 
-    public Employee(String firstName, String lastName, String email, Gender gender, Address address, List<String> favouriteSubjects, BigDecimal totalSpentInBooks, LocalDateTime created) {
+    public Employee(String firstName, String lastName, String email, String gender, Address address, List<String> favouriteSubjects, BigDecimal totalSpentInBooks, LocalDateTime created) {
         this.firstName = firstName;
         this.lastName = lastName;
         this.email = email;

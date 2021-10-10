@@ -14,12 +14,16 @@ public class StudentController {
 
     private final StudentService studentService;
 
-    @GetMapping("/findAll")
+    @GetMapping(
+            "/findAll"
+    )
     public List<Student> fetchAllStudents() {
         return studentService.getAllStudents();
     }
 
-    @PostMapping(path="/create", consumes = MediaType.APPLICATION_JSON_VALUE, produces = MediaType.APPLICATION_JSON_VALUE)
+    @PostMapping(
+            path="/create"
+    )
     public Student createStudent(@RequestBody Student student) {
         return studentService.createStudent(student);
     }

@@ -9,24 +9,22 @@ Technologies used :
 Sample JSON to POST data :
 
 ```json
-[
-    {
-        "firstName": "Ja",
-        "lastName": "Champion",
-        "email": "david@email.com",
-        "gender": "MALE",
-        "address": {
-            "country": "England",
-            "city": "London",
-            "postCode": "NE7"
-        },
-        "favouriteSubjects": [
-            "Computer Science"
-        ],
-        "totalSpentInBooks": 10,
-        "created": "2021-10-09T21:41:27.024"
-    }
-]
+  {
+      "firstName": "Ja",
+      "lastName": "Champion",
+      "email": "david@email.com",
+      "gender": "MALE",
+      "address": {
+          "country": "England",
+          "city": "London",
+          "postCode": "NE7"
+      },
+      "favouriteSubjects": [
+          "Computer Science"
+      ],
+      "totalSpentInBooks": 10,
+      "created": "2021-10-09T21:41:27.024"
+  }
 ```
 Docker yaml file :
 

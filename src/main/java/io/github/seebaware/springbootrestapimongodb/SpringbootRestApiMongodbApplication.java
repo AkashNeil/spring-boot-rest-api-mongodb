@@ -21,7 +21,7 @@ public class SpringbootRestApiMongodbApplication {
         SpringApplication.run(SpringbootRestApiMongodbApplication.class, args);
     }
 
-    @Bean
+    /*@Bean
     CommandLineRunner runner(StudentRepository studentRepository, MongoTemplate mongoTemplate) {
         return args -> {
 
@@ -44,19 +44,8 @@ public class SpringbootRestApiMongodbApplication {
                   LocalDateTime.now()
           );
 
-            // usingMongoTemplateAndQuery(studentRepository, mongoTemplate, email, student);
+           usingMongoTemplateAndQuery(studentRepository, mongoTemplate, email, student);
 
-           /*
-           studentRepository
-                    .findStudentByEmail(email).ifPresentOrElse(
-                    s -> {
-                        log.warning(student + " already exists.");
-                    }, () -> {
-                        log.info("Inserting student " + student);
-                        studentRepository.insert(student);
-                    }
-            );
-            */
 
         };
     }
@@ -78,6 +67,6 @@ public class SpringbootRestApiMongodbApplication {
         } else {
             log.info(student + " already exists.");
         }
-    }
+    }*/
 
 }

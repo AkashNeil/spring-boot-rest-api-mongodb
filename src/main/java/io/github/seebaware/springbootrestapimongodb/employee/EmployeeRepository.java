@@ -6,6 +6,6 @@ import java.util.Optional;
 
 public interface EmployeeRepository extends MongoRepository<Employee, String> {
 
-    Optional<Employee> findStudentByEmail(String email);
+    Optional<Employee> findEmployeeByEmail(String email);
 
 }
